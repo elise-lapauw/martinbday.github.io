@@ -1,0 +1,24 @@
+<div class="content" role="main" *ngIf="martinQualities">
+  Martin est un prénom théophore qui procède du nom propre latin Martinus, dérivé en -inus de l'adjectif martius « (relatif à), de Mars », Mars étant à la fois le dieu de la guerre et de la fertilité des sols. 
+  <br/>
+  <br/>
+  Oui mais Martin c'est avant tout ...
+  <br/> 
+  (clique sur les images pour voir ton vrai visage)
+  <br/>
+  <div *ngFor="let q of martinQualities" >
+    <br/>
+    <div class="tt">{{q.qualite}}
+    <div *ngIf="!q.isClicked" class="img-display" (click)="onClickImg(q)"><img src="{{q.src1}}"/></div>  
+    <div *ngIf="q.isClicked" class="img-display" (click)="onClickImg(q)"><img src="{{q.src2}}"/></div>  
+  </div>
+  </div>
+Happy Birthday Tintin !!!! 
+From Lili
+<br/>
+<br/>
+Ce site est fait à l'arrache mais avec beaucoup d'amour !
+<br/>
+ Pour tes 40 ans t'auras droit à une application mobile, ou carrément un truc en réalité virtuelle !!
+</div>
+
